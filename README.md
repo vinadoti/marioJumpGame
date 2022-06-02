@@ -8,6 +8,9 @@
 
 <hr>
 
+Ficou interessado em conhecer o projeto? Para jogar [clique aqui](https://mario-jump-game.vercel.app/)
+
+<hr>
 
 ##  Referências 📌
 
