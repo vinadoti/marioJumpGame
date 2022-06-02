@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* onde acontece o jogo */
+.game-board {
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+    border-bottom: 15px solid #05b105;
+    position: relative;
+    overflow: hidden; /* tudo o que sair do board não aparece na tela*/
+    background: linear-gradient(#1c91f8, #91f0fb);
+}
+
+.clouds{
+    position: absolute;
+    width: 500px;
+    animation: clouds-animation 20s linear infinite;
+}
+
+.mario {
+    position: absolute; /* posição absoluta */
+    bottom: 0; /* posição do mario, em baixo*/
+    width: 150px; /* largura do personagem */
+}
+
+.jump {
+    animation: mario-jump 500ms ease-out; /* animação do personagem */
+}
+
+.pipe {
+    position: absolute; /* posição absoluta para não interferir nas outras imagens */
+    bottom: 0; /* posição do pipe, em baixo */
+    width: 80px; /* largura do pipe */
+    animation: pipe-animation 2s infinite linear;
+}
+
+/* animação das nuvens */
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+/* A animação do mario pulando */
+@keyframes mario-jump {
+    0% { /* inicio da animação */
+        bottom: 0;
+    }
+    40% { /* quando o mario começa a pular */
+        bottom: 180px;
+    }
+    50% { /* meio da animação */
+        bottom: 180px;
+    }
+    60% { /* quando o mario começa a cair  */
+        bottom: 180px;
+    }
+    100% { /* fim da animação */
+        bottom: 0;
+    }
+}
+
+/*  A animação do cano */
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+    
