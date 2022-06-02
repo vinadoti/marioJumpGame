@@ -1,4 +1,3 @@
-<!-- Apresentação -->
 <h1 align="center">
     <img width="150px" alt="Mario e Yoshi" title="MARIO JUMP GAME" src="./img/mario-speed.gif"></img>
     <br>
@@ -9,16 +8,18 @@
 
 <hr>
 
-<!-- Referencias -->
-## 🔖 Referências</h2>
-🔹 Projeto desenvolvido a partir de uma video-aula. 
-🔹 Créditos ao Manual do Dev. 
-🔹 Para assistir ao vídeo completo [clique aqui](http://https://www.youtube.com/watch?v=r9buAwVBDhA "clique aqui") 
 
+##  Referências 📌
+
+🔹 Projeto desenvolvido a partir de uma video-aula. 
+
+🔹 Créditos ao Manual do Dev. 
+
+🔹 Para assistir ao vídeo completo [clique aqui](http://https://www.youtube.com/watch?v=r9buAwVBDhA "clique aqui") 
 
 <hr>
 
-## 🚀 Tecnologias
+## Tecnologias 🚀 
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
