@@ -1,5 +1,6 @@
 const mario = document.querySelector('.mario'); // cria a variavel para o mario
 const pipe = document.querySelector('.pipe'); // cria a variavel para o pipe
+const startGame = document.querySelector('.start-game'); // cria a variavel para o mario
 
 // cria a função para o evento de clique
 const jump = () => {
@@ -27,9 +28,16 @@ const loop = setInterval(() => {
 
        mario.src = 'img/mario-dead.png'; // troca a imagem do mario para a imagem de morte
        mario.style.width = '75px'; // diminui a largura do mario para 75px
-       mario.style.marginLeft = '50px'; // diminui a margem esquerda do mario para 50px
+       mario.style.marginLeft = '80px'; // diminui a margem esquerda do mario para 50px
+
+       startGame.src = 'img/gameover.png'; // troca a imagem do start game para a imagem de game over
 
        clearInterval(loop); // para o loop
+       
+       document.addEventListener('keydown', () => {
+        location.reload(); // recarrega a página
+    });
+    
     }
     
 }, 10); // cria a variavel para o loop
